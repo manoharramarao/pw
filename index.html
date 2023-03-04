@@ -23,7 +23,7 @@
       let sw = await navigator.serviceWorker.ready;
       let push = await sw.pushManager.subscribe({
         userVisibleOnly: true,
-        applicationServerKey: `BNKohnHJO26-TxdTvwzmV2T7N6h1yDFDPnCQ37qj3nFAIv3CQy0bj5VWxwoiEXqKYOa_D0bg67c17cS9QDDGXlo`
+        applicationServerKey: urlBase64ToUint8Array('BHDTngWIhVl2pm85P7KCAST59CvizykEjkk6XaVorjijsuGmAdDNr8524T1f7aQEYHHrYMD72RNuaESwv0FW2A4')
       });
       console.log(JSON.stringify(push));
     }
