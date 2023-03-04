@@ -11,4 +11,4 @@ let sub = {"endpoint":"https://fcm.googleapis.com/fcm/send/dd8PXx1SHqc:APA91bFyX
 
 
 
-push.sendNotification(sub, 'Test message')
+push.sendNotification(sub, 'test message')
