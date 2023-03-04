@@ -12,5 +12,5 @@ self.addEventListener('push', (e) => {
       {action: 'close', title: 'Close', icon: 'images/xmark.png'},
     ]
   }
-  e.waitUntil(self.registration.sendNotification('test message', options));
+  e.waitUntil(self.registration.showNotification('test message', options));
 });
