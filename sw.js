@@ -1,6 +1,6 @@
 self.addEventListener('push', (e) => {
   var options = {
-    body: JSON.stringify(e),
+    body: JSON.stringify(e.data),
     icon: 'images/example.png',
     vibrate: [100, 50, 100],
     data: {
