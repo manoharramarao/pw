@@ -15,6 +15,8 @@
   <button onClick="subscribe()">
     Subscribe
   </button>
+  
+  <label id="sub">test</label>
 
   <script>
     addEventListener('load', async () => {
@@ -43,7 +45,8 @@
         userVisibleOnly: true,
         applicationServerKey: 'BHDTngWIhVl2pm85P7KCAST59CvizykEjkk6XaVorjijsuGmAdDNr8524T1f7aQEYHHrYMD72RNuaESwv0FW2A4'
       });
-      alert(JSON.stringify(push));
+      document.getElementById('sub').innerHTML = JSON.stringify(push);
+      
     }
   </script>
 
