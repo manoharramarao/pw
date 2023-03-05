@@ -1,3 +1,21 @@
+const staticDevCoffee = "dev-coffee-site-v1"
+const assets = [
+  "/",
+  "/index.html",
+  "/css/style.css",
+  "/images/maskable_icon_192.png",
+  "/images/maskable_icon_512.png",
+]
+
+self.addEventListener("install", installEvent => {
+  installEvent.waitUntil(
+    caches.open(staticDevCoffee).then(cache => {
+      cache.addAll(assets)
+    })
+  )
+})
+
+
 self.addEventListener('push', (e) => {
   var options = {
     body: e.data.text,
